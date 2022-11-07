@@ -128,8 +128,9 @@ address {
 }
 
 .header-contact {
-  gap: 50px;
   display: flex;
+  align-items: center;
+  gap: 50px;
 }
 
 .header-tel {
@@ -156,6 +157,11 @@ address {
   color: var(--acsent-colour);
 }
 
+.header-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 .header-nav {
   display: flex;
   align-items: center;
@@ -171,9 +177,14 @@ address {
 .main-bg {
   background-color: #2f303a;
   text-align: center;
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-position: center;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-bgr.jpg);
 }
+
 .main-title {
   width: 696px;
   font-weight: 900;
@@ -237,6 +248,16 @@ address {
   color: var(--description-text-color);
 }
 
+.features-icon-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+}
+
 /*-------------------------------------------Чим ми займаємось-----------------*/
 .section-bgr {
   padding-top: 0;
@@ -293,10 +314,82 @@ address {
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
   color: var(--description-text-color);
+  margin-bottom: 16px;
 }
 .card {
   background: var(--main-title-color);
 }
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--main-title-color);
+  color: #afb1b8;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  background-color: var(--acsent-colour);
+  color: var(--main-title-color);
+}
+
+.socials-icon {
+  fill: currentColor;
+}
+
+/*---------Постійні клієнти------------------------*/
+/*clients-list
+clients-list-item
+
+
+border: 1px solid #AFB1B8;
+border-radius: 4px;
+
+*/
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.clients-list-item {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--description-text-color);
+  border-radius: 4px;
+  color: var(--description-text-color);
+  cursor: pointer;
+}
+
+.company-icon {
+  fill: var(--description-text-color);
+}
+
+.clients-list-item:hover,
+.clients-list-item:focus {
+  border-color: var(--acsent-colour);
+}
+.company-icon:hover,
+.company-icon:focus {
+  fill: var(--acsent-colour);
+}
+
 /*-------------------------------Footer-----------------------------*/
 .footer-bgr {
   background-color: #2f303a;
@@ -344,14 +437,71 @@ address {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-/*.footer-ad:hover,
-.footer-ad:active {
-  color: var(--acsent-colour);
-}*/
+
 .footer-contact:hover,
 .footer-contact:focus {
   color: var(--acsent-colour);
 }
+/*----footer icons-----*/
+
+.footer-socials {
+  text-align: left;
+  width: 206px;
+}
+
+.footer-socials-title {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+  margin-bottom: 20px;
+}
+
+.footer-socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.socials-icon-footer {
+  fill: var(--main-title-color);
+}
+
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+  background-color: var(--acsent-colour);
+}
+
+.socials-footer {
+}
+
+/*.footer-socials-link{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+   background-color: rgba(255, 255, 255, 0.1);
+  color: var(--main-title-color);
+
+
+ .footer-socials-link{
+	display:flex ;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	background-color:rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
+}
+ 
 /*-----------------------------------Portfolio-----------------------*/
 /*Button-list*/
 
@@ -391,6 +541,10 @@ address {
   box-sizing: border-box;
   width: 370px;
   background: var(--main-title-color);
+}
+.box:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .img-border {
