@@ -401,13 +401,10 @@ border-radius: 4px;
 
 .clients-link:hover,
 .clients-link:focus {
- 
+  color: var(--acsent-colour);
   border-color: var(--acsent-colour);
 }
-.company-icon:hover,
-.company-icon:focus {
-   fill: var(--acsent-colour);
-}
+ 
 /*-------------------------------Footer-----------------------------*/
 .footer-bgr {
   background-color: #2f303a;
